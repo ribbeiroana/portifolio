@@ -1,0 +1,30 @@
+:root {
+  --black: #0000;
+  --white: #fff;
+  --pink: #9e0897;
+  --purple: #2b003a;
+  --purple-ligth: #410056;
+  --yellow: #fdd76f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  background-color: white;
+}
+
+.section-home {
+  background-color: var(--purple-ligth);
+  background-image: linear-gradient(43deg, #2b003a 0%, #9e0897 46%, #fdd76f 100%);
+}
+
+
+
