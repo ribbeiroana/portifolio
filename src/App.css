@@ -21,10 +21,83 @@ body {
   background-color: white;
 }
 
-.section-home {
-  background-color: var(--purple-ligth);
-  background-image: linear-gradient(43deg, #2b003a 0%, #9e0897 46%, #fdd76f 100%);
+.whatsapp-fixed {
+  background-color: white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.icon-fixed {
+  color: black;
+  font-size: 2rem;
+  cursor: pointer; 
+}
+
+.whatsapp-fixed:hover {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.icon-fixed:hover {
+  color: #91058a;
 }
 
 
+.arrow-fixed {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+}
 
+.icon-fixed-arrow {
+  color: black;
+  font-size: 2rem;
+  cursor: pointer; 
+}
+
+.arrow-fixed:hover {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.icon-fixed-arrow:hover {
+  color: #91058a;
+}
+
+.section-home {
+  background-color: var(--purple-ligth);
+  background-image: linear-gradient(43deg, #08010a 10%, #91058a 46%, #fdd76f 100%);
+}
+
+.section-scroll {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  color: white;
+  font-size: 4rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.section-servicos {
+  background-color: black;
+  color: white;
+}
