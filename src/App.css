@@ -221,9 +221,39 @@ h2 {
 }
 
 .section-servicos {
-  /* background-color: black; */
-  color: white;
+  background-color: black;
   padding: 2rem;
+  min-width: 100vh;
+}
+
+.section-projects {
+  padding: 2rem;
+}
+
+.description-projects h3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  color: #0000;
+}
+
+.cards-projects {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  height: 100%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.card img {
+  max-width: 200px;
 }
 
 footer {
@@ -242,7 +272,8 @@ footer {
   flex-direction: column;
 }
 
-.column-footer a, p {
+.column-footer a,
+p {
   display: flex;
   list-style: none;
   text-decoration: none;

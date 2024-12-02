@@ -6,7 +6,7 @@ import { VscVscode } from "react-icons/vsc";
 import { TbSql } from "react-icons/tb";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
-
+import notebook from './assets/not.png'
 function App() {
   return (
     <>
@@ -81,9 +81,36 @@ function App() {
       </div>
 
       <div className='section-servicos'>
-        <h3></h3>
+        <h3>teste</h3>
       </div>
 
+      <div className='section-projects'>
+        <div className='description-projects'>
+          <h3>Projetos</h3>
+        </div>
+
+        <div className='cards-projects'>
+
+          <div className='card'>
+            <h3>Projeto</h3>
+            <img src={notebook} alt="tela" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+
+          <div className='card'>
+            <h3>Projeto</h3>
+            <img src={notebook} alt="tela" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+
+          <div className='card'>
+            <h3>Projeto</h3>
+            <img src={notebook} alt="tela" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          
+        </div>
+      </div>
 
       <footer>
         <div className='container-footer'>
