@@ -18,7 +18,10 @@ body {
   font-weight: 700;
   font-style: normal;
   color: white;
-  background-color: white;
+  background-color: var(--purple-ligth);
+  /* overflow-x: hidden;  */
+  background-image: linear-gradient(43deg, #08010a 10%, #91058a 46%, #fdd76f 100%);
+
 }
 
 .whatsapp-fixed {
@@ -37,7 +40,7 @@ body {
 .icon-fixed {
   color: black;
   font-size: 2rem;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .whatsapp-fixed:hover {
@@ -48,7 +51,6 @@ body {
 .icon-fixed:hover {
   color: #91058a;
 }
-
 
 .arrow-fixed {
   background-color: white;
@@ -67,7 +69,7 @@ body {
 .icon-fixed-arrow {
   color: black;
   font-size: 2rem;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .arrow-fixed:hover {
@@ -79,14 +81,90 @@ body {
   color: #91058a;
 }
 
-.section-home {
+.header {
+  background-color: black;
+  /* width: 50%; */
+  width: 200px;
+  padding: 10px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  font-size: 30px;
+  font-size: 50px;
+
+}
+
+.icon-header {
+  border-radius: 20px;
+  color: white;
+  width: 90px;
+  height: 55px;
+  padding: 10px;
+  font-size: 50px;
   background-color: var(--purple-ligth);
   background-image: linear-gradient(43deg, #08010a 10%, #91058a 46%, #fdd76f 100%);
 }
-/* Definindo o estilo para a rolagem horizontal */
+
+.section-home {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* Alinha os itens à esquerda */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  gap: 10px;
+  /* Espaçamento entre h1 e h2 */
+  padding-left: 4rem;
+  /* Adiciona margem à esquerda */
+  overflow: hidden;
+  /* Impede a rolagem na section */
+  position: relative;
+}
+
+h1,
+h2 {
+  opacity: 0;
+  /* Inicialmente invisível */
+  animation: zoom-in 50s forwards;
+}
+
+/* Animação de zoom invertido nas letras */
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.2);
+    /* Aumenta o efeito de zoom */
+    opacity: 1;
+  }
+}
+
+/* Animação de zoom invertido aplicada ao h1 */
+h1 {
+  font-size: 5rem;
+  /* Aumenta o tamanho do h1 */
+  animation: zoom-in 1s ease-out forwards;
+}
+
+/* Animação de zoom invertido aplicada ao h2 */
+h2 {
+  font-size: 1.50rem;
+  /* Aumenta o tamanho do h2 */
+  animation: zoom-in 1s 0.5s ease-out forwards;
+  /* Início retardado para efeito suave */
+}
+
+
+
 .section-scroll {
-  width: 100vw;
-  height: 100px; /* A altura pode ser ajustada conforme necessário */
+  padding: 1rem 0;
+  height: 100px;
   overflow: hidden;
   position: relative;
   background-color: black;
@@ -101,28 +179,27 @@ body {
 
 .scrolling-icons {
   display: flex;
-  animation: scroll-icons 20s linear infinite; /* Animação contínua */
+  animation: scroll-icons 50s linear infinite;
   white-space: nowrap;
 }
 
 .icon {
-  font-size: 80px; /* Tamanho aumentado */
+  font-size: 80px;
   margin-right: 20px;
 }
 
-/* Animação de rolagem contínua */
 @keyframes scroll-icons {
   0% {
-    transform: translateX(0); /* Começa com os ícones visíveis */
+    transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-100%); /* Move todos os ícones para a esquerda */
+    transform: translateX(-100%);
   }
 }
-
-
 
 .section-servicos {
   background-color: black;
   color: white;
+  padding: 2rem;
 }

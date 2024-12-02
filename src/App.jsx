@@ -1,8 +1,9 @@
 import './App.css';
-import { FaHtml5, FaNodeJs, FaReact, FaCss3Alt, FaFigma, FaBootstrap, FaGitAlt, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaHtml5, FaNodeJs, FaReact, FaCss3Alt, FaFigma, FaBootstrap, FaGitAlt, FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiMongodb, SiPrisma, SiSequelize, SiTypescript, SiInsomnia, SiPostman, SiVite, SiEslint } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { TbSql } from "react-icons/tb";
+import { IoIosArrowUp } from "react-icons/io";
 
 function App() {
   return (
@@ -10,10 +11,19 @@ function App() {
       <div className='whatsapp-fixed'>
         <FaWhatsapp className='icon-fixed' />
       </div>
+      <div className='arrow-fixed'>
+        <IoIosArrowUp className='icon-fixed-arrow' />
+      </div>
+
+      <div className='header'>
+          <FaGithub  alt='GitHub' />
+          <FaLinkedin className='icon-header' alt='Linkedin' />
+        </div>
 
       <div className='section-home'>
-        <h1>Bem-vindo ao meu site!</h1>
-        <h1>Conheça minhas habilidades</h1>
+
+        <h1>Ana Ribeiro</h1>
+        <h2>Desenvolvedora Web</h2>
       </div>
 
       <div className='section-scroll'>
@@ -67,10 +77,10 @@ function App() {
           </div>
         </div>
       </div>
-
+      {/* 
       <div className='section-servicos'>
         <h2>Meus Serviços</h2>
-      </div>
+      </div> */}
     </>
   );
 }
