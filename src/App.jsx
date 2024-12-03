@@ -24,8 +24,8 @@ function App() {
 
       <div className='section-home'>
 
-        {/* <h1>Ana Ribeiro</h1>
-        <h2>Desenvolvedora Web</h2> */}
+        <h1>Ana Ribeiro</h1>
+        <h2>Desenvolvedora Web</h2>
       </div>
 
       <div className='section-scroll'>
@@ -80,13 +80,25 @@ function App() {
         </div>
       </div>
 
-      <div className='section-servicos'>
-        <h3>teste</h3>
+      <div className='section-service'>
+        {/* <h3 className='titulo'>Serviços</h3> */}
+
+        <div className="cards-service">
+          <div className="card-service">
+            <p>teste</p>
+          </div>
+          <div className="card-service">
+            <p>teste</p>
+          </div>
+          <div className="card-service">
+            <p>teste</p>
+          </div>
+        </div>
       </div>
 
       <div className='section-projects'>
         <div className='description-projects'>
-          <h3>Projetos</h3>
+          <h3 className='titulo'>PROJETOS</h3>
         </div>
 
         <div className='cards-projects'>
@@ -94,21 +106,18 @@ function App() {
           <div className='card'>
             <h3>Projeto</h3>
             <img src={notebook} alt="tela" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
           </div>
 
           <div className='card'>
             <h3>Projeto</h3>
             <img src={notebook} alt="tela" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
           </div>
 
           <div className='card'>
             <h3>Projeto</h3>
             <img src={notebook} alt="tela" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
           </div>
-          
+
         </div>
       </div>
 

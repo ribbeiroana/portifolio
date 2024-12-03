@@ -15,7 +15,6 @@
 
 body {
   font-family: "Poppins", serif;
-  color: white;
   background-color: var(--purple-ligth);
   /* overflow-x: hidden;  */
   background-image: linear-gradient(43deg, #08010a 10%, #91058a 46%, #fdd76f 100%);
@@ -115,6 +114,10 @@ header {
   border: none;
 }
 
+.icon-header-git {
+  color: white;
+}
+
 .icon-header-git:hover {
   border-radius: 20px;
   color: white;
@@ -190,6 +193,7 @@ h2 {
   overflow: hidden;
   position: relative;
   background-color: black;
+  color: white;
 }
 
 .scrolling-wrapper {
@@ -220,21 +224,41 @@ h2 {
   }
 }
 
-.section-servicos {
+.section-service {
   background-color: black;
   padding: 2rem;
   min-width: 100vh;
 }
 
+.cards-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-service {
+  background-color: #2b003a;
+}
+
 .section-projects {
   padding: 2rem;
 }
-
-.description-projects h3 {
-  text-align: center;
-  font-weight: 200;
-  font-size: 1rem;
-  color: #0000;
+h1, h2 {
+  color: white;
+}
+.titulo {
+  text-align: left;
+  font-weight: 800;
+  font-size: 9rem;
+  background: linear-gradient(to left, #ecf756, #f2f3eb);
+  /* Gradiente */
+  -webkit-background-clip: text;
+  /* Aplica o gradiente apenas ao texto */
+  background-clip: text;
+  /* Para navegadores não webkit */
+  color: transparent;
+  animation: gradient-animation 5s ease infinite;
 }
 
 .cards-projects {
@@ -242,18 +266,34 @@ h2 {
   gap: 3rem;
   justify-content: center;
   align-items: center;
+  margin-top: -6rem;
 }
 
 .card {
   padding: 2rem;
-  background-color: #f8f8f8;
+  opacity: 0.8;
   height: 100%;
+  background-color: white;
   text-align: center;
   border-radius: 12px;
 }
 
+/* .cards-projects:hover > :not(:hover) {
+  opacity: .7;
+  filter: blur(5px);
+} */
+
+.titulo-card {
+  color: #f0ecec00;
+}
+
+.card p {
+  font-size: 2rem;
+}
+
 .card img {
   max-width: 200px;
+  mix-blend-mode: darken; /*armoniza os dois fundos em um fusão da img*/
 }
 
 footer {
