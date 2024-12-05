@@ -14,7 +14,9 @@ function App() {
         <FaWhatsapp className='icon-fixed' />
       </div>
       <div className='arrow-fixed'>
-        <IoIosArrowUp className='icon-fixed-arrow' />
+        <a href="#home">
+          <IoIosArrowUp className='icon-fixed-arrow' />
+        </a>
       </div>
 
       <header>
@@ -22,10 +24,10 @@ function App() {
         <FaLinkedin className='icon-header-link' alt='Linkedin' />
       </header>
 
-      <div className='section-home'>
-
+      <div id='home' className='section-home'>
+        {/* 
         <h1>Ana Ribeiro</h1>
-        <h2>Desenvolvedora Web</h2>
+        <h2>Desenvolvedora Web</h2> */}
       </div>
 
       <div className='section-scroll'>
@@ -80,8 +82,16 @@ function App() {
         </div>
       </div>
 
-      <div className='section-service'>
-        {/* <h3 className='titulo'>Serviços</h3> */}
+      <div id="about" className='section-about'>
+        <div className='about-descriptions'>
+          <h2>SOBRE MIM</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ex odio natus expedita reiciendis temporibus ut tenetur distinctio explicabo, consectetur deleniti, ipsum quos, nostrum eius hic sit animi vitae aliquid.</p>
+        </div>
+
+      </div>
+
+      {/* <div id='service' className='section-service'>
+        <h3 className='titulo'>Serviços</h3>
 
         <div className="cards-service">
           <div className="card-service">
@@ -94,9 +104,9 @@ function App() {
             <p>teste</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className='section-projects'>
+      <div id='projects' className='section-projects'>
         <div className='description-projects'>
           <h3 className='titulo'>PROJETOS</h3>
         </div>
@@ -104,18 +114,36 @@ function App() {
         <div className='cards-projects'>
 
           <div className='card'>
-            <h3>Projeto</h3>
+            <div className='card-descriptions'>
+              <h3>Projeto</h3>
+            </div>
             <img src={notebook} alt="tela" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus nam </p>
+            <img className='badges' src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="JavaScript" />
+            <img className='badges' src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+            <img className='badges' src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="JavaScript" />
           </div>
 
           <div className='card'>
-            <h3>Projeto</h3>
+            <div className='card-descriptions'>
+              <h3>Projeto</h3>
+            </div>
             <img src={notebook} alt="tela" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus nam </p>
+            <img className='badges' src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+            <img className='badges' src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="JavaScript" />
+            <img className='badges' src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="JavaScript" />
           </div>
 
           <div className='card'>
-            <h3>Projeto</h3>
+            <div className='card-descriptions'>
+              <h3>Projeto</h3>
+            </div>
             <img src={notebook} alt="tela" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus nam </p>
+            <img className='badges' src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="JavaScript" />
+            <img className='badges' src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+            <img className='badges' src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="JavaScript" />
           </div>
 
         </div>
@@ -125,19 +153,19 @@ function App() {
         <div className='container-footer'>
 
           <div className='column-footer'>
-            <a href="#">
+            <a href="#home">
               <FaHome className='icon-footer' />
               Início
             </a>
-            <a href="#">
+            <a href="#about">
               <FaUser className='icon-footer' />
               Sobre
             </a>
-            <a href="#">
+            <a href="#service">
               <MdOutlineMiscellaneousServices className='icon-footer' />
               Serviços
             </a>
-            <a href="#">
+            <a href="#projects">
               <FaCode className='icon-footer' />
               Projetos
             </a>
